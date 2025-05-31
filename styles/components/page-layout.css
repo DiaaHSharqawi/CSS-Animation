@@ -1,0 +1,27 @@
+/*
+   defines the layout and styling for the page
+*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+main,
+section {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  display: flex;
+  flex-flow: wrap column;
+  align-content: center;
+  justify-content: start;
+
+  position: relative;
+}

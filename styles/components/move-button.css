@@ -1,0 +1,60 @@
+/* This CSS file styles the move button and its associated animations */
+
+@import url("./../shared/main-colors/colors.css");
+
+/* ---- label styling ----*/
+
+label[for="move-button"] {
+  background-color: var(--success-color);
+  padding: 12px 24px;
+  margin: 4px 2px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  color: var(--white-color);
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid var(--success-color);
+    color: var(--black-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+  }
+}
+
+/* ---- Button styling ----*/
+
+#move-button {
+  display: none;
+
+  &:not(:checked) {
+    ~ label[for="move-button"] {
+      &::after {
+        content: "Move";
+      }
+    }
+  }
+
+  &:checked {
+    ~ label[for="move-button"] {
+      background-color: var(--white-color);
+      border: 2px solid var(--success-color);
+      color: var(--black-color);
+
+      &::after {
+        content: "Stop";
+      }
+
+      &:hover {
+        background-color: var(--success-color);
+        border: 2px solid var(--success-color);
+        color: var(--white-color);
+      }
+    }
+
+    ~ #animated-div {
+      animation: animated-div 2s infinite;
+    }
+  }
+}

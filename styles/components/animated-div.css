@@ -1,0 +1,28 @@
+/* This CSS styles the animated div and its keyframes */
+
+@import url("./../shared/main-colors/colors.css");
+
+#animated-div {
+  width: 200px;
+  height: 200px;
+  background-color: var(--white-color);
+  background-color: var(--green-color);
+  position: absolute; /* The parent container have a position: relative;*/
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes animated-div {
+  0% {
+    left: 0;
+    bottom: 0;
+  }
+  50% {
+    left: 200px;
+    bottom: 0;
+  }
+  100% {
+    left: 0;
+    bottom: 0;
+  }
+}

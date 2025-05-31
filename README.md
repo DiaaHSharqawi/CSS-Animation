@@ -8,7 +8,7 @@ This project showcases how to build interactive web elements with animated effec
 
 ## Demo
 
-👉 **[Live Demo](https://diaahsharqawi.github.io/CSS-Animation/)**
+👉 **[Live Demo](https://itg-software-front-end-internship.github.io/CSS-Animation/)**
 
 See the animation and interactivity in action!
 
